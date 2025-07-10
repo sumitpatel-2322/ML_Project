@@ -7,3 +7,4 @@ catboost==1.2.8
 xgboost==2.1.4
 Flask==3.0.3
 dill==0.4.0
+-e .
