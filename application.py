@@ -36,5 +36,5 @@ def predict_datapoint():
     
     
 if __name__=="__main__":
-    app.run(host="0.0.0.0",port=3000,debug=True)
+    app.run(host="0.0.0.0")
     print("Server Running on http://localhost:3000")
