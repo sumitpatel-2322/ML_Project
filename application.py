@@ -32,9 +32,10 @@ def predict_datapoint():
         print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
         print("After Prediction")
+        print(f"Final Prediction: {round(results[0],2)}")
         return render_template('predict.html',results=results[0])
     
     
 if __name__=="__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0",debug=True,port=3000)
     print("Server Running on http://localhost:3000")
